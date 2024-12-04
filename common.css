@@ -1,0 +1,11 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+	user-select: none;
+	background-color: #3b4252;
+  }

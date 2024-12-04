@@ -1,0 +1,129 @@
+#editor {
+  min-width: 100dvw;
+  height: calc(100dvh - 90px);
+  padding: 20px;
+  padding-bottom: 0;
+  overflow: auto;
+}
+
+#nav {
+  width: 100dvw;
+  min-width: 360px;
+  height: 70px;
+  /* background-color: coral; */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav__button {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: background-color .2s, font-size .05s;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1em;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.nav__button:hover {
+  font-size: 1.2em;
+}
+
+.state__import__input__label {
+  width: 100px;
+  background-color: rgb(13, 152, 186);
+}
+
+.state__import__input__label:hover {
+  background-color: rgb(11, 124, 153);
+}
+
+.state__export__button {
+  width: 100px;
+  background-color: rgb(12, 166, 120);
+}
+
+.state__export__button:hover {
+  background-color: rgb(9, 146, 104);
+}
+
+.key__value__list,
+.key__value__item {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.key__value__list {
+  flex-direction: column;
+}
+
+#editor > .key__value__list {
+  width: max-content;
+}
+
+.key__value__item {
+  gap: 5px;
+}
+
+.leaf {
+  gap: 0px;
+}
+
+.key__element,
+.value__element,
+.value__input__element {
+  padding: 5px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+  font-weight: bold;
+  line-height: 2.5em;
+}
+
+.key__element {
+  background-color: #E77471;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px 0px 0px 5px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.empty__value__key__element {
+  border-radius: 5px;
+}
+
+.key__element:hover {
+  background-color: #DD4132;
+}
+
+.key__value__element__generic:not(:first-child):not(:last-child) { display: none; }
+
+.value__element {
+  min-width: 50px;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.value__input__element {
+  border-radius: 0px 5px 5px 0px;
+  background-color: #d8dee9;
+  border: none;
+  flex-grow: 1;
+}
+
+.empty__value__element { background-color: #ababab; }
