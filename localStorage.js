@@ -24,3 +24,7 @@ const exportData = () => {
 	// REMOVE THE HIDDEN ANCHOR ELEMENT
 	document.body.removeChild(link)
 }
+
+const clearData = () => {
+	localStorage.setItem("state", JSON.stringify({}))
+}

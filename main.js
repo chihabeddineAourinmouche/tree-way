@@ -14,7 +14,8 @@ navBarButtons(nav)
 
 // WINDOW EVENTS
 window.addEventListener("onReset", () => {
-	editor.innerHTML = null
+	[editor, nav].forEach(e => e.innerHTML = null)
 	state = JSON.parse(localStorage.getItem("state"))
 	visualizeJSON(state, state, [], editor)
+	navBarButtons(nav)
 })

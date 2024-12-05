@@ -22,6 +22,7 @@
 }
 
 .nav__button {
+  width: 100px;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -39,7 +40,6 @@
 }
 
 .state__import__input__label {
-  width: 100px;
   background-color: rgb(13, 152, 186);
 }
 
@@ -48,12 +48,19 @@
 }
 
 .state__export__button {
-  width: 100px;
   background-color: rgb(12, 166, 120);
 }
 
 .state__export__button:hover {
   background-color: rgb(9, 146, 104);
+}
+
+.state__clear__button {
+  background-color: rgb(255, 107, 107);
+}
+
+.state__clear__button:hover {
+  background-color: rgb(250, 82, 82);
 }
 
 .key__value__list,
